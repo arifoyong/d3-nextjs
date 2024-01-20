@@ -92,7 +92,7 @@ const Group: React.FC = () => {
       .attr('fill', 'orange')
       .attr('height', d=>y(d.number))
       .attr('x', d=> x(d.name)!)
-  },[selection])
+  },[selection, x, xAxis, y, yAxis])
 
   return (
     <div>

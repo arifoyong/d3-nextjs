@@ -94,7 +94,7 @@ const Group: React.FC = () => {
       .attr('height', d => chart.H - y(d.number))
       .attr('y', d=>y(d.number))
     
-  },[selection])
+  },[selection, data, x, y])
 
   const addRandom = () => {
     const dataToAdd = {
@@ -162,7 +162,7 @@ const Group: React.FC = () => {
         .attr('y', d=>y(d.number))
         .attr('fill', 'orange')
     }
-  },[data])
+  },[data, x, y])
 
   return (
     <div>
